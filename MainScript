@@ -1144,40 +1144,7 @@ local ChatCrasher = COB("Utility", {
 	["Default"] = false,
 	["HoverText"] = "cool"
 })
-local AntiAFK = COB("Render", {
-	["Name"] = "AntiAFK",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.AntiAFK = true
-				local cons = getconnections or get_signal_cons
-				if cons then
-					for i,v in pairs(cons(game:GetService("Players").LocalPlayer.Idled)) do
-						if ScriptSettings.AntiAFK == true then
-							v:Disable()
-							v:Disconnect()
-						end
-					end
-				end
-				assert(firesignal, "Asserted FireSignal")
-				local uis = game:GetService("UserInputService")
-				local runs = game:GetService("RUnService")
-				uis.WindowFocusReleased:Connect(function()
-					if ScriptSettings.AntiAFK == true then
-						runs.Stepped:Wait()
-						pcall(firesignal, uis.WindowFocused)
-					end
-				end)
-			end)
-		else
-			pcall(function()
-				ScriptSettings.AntiAFK = false
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "No more AFK kicks, wow, another untoggable module i made toggable"
-})
+
 
 
 
