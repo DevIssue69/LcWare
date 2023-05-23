@@ -1144,3 +1144,5 @@ local ChatCrasher = COB("Utility", {
 	["Default"] = false,
 	["HoverText"] = "cool"
 })
+
+--testing something^
