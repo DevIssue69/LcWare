@@ -247,7 +247,7 @@ SunRays.Parent = game[LightingName]
 })
 
 local AnticheatDisabler = COB("Utility", {
-    Name = "Chat-Crasher",
+    Name = "ChatCrasher",
     Function = function(callback) 
         if callback then
       -- FE chat made by MrBeast#5353
