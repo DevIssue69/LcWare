@@ -1,5 +1,5 @@
--- oh finnaly i updated.
--- scepty developing this cool script;; --
+-- lcware v.1.7
+-- copyright;) --
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until shared.GuiLibrary
 local GuiLibrary = shared.GuiLibrary
