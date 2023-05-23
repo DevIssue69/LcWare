@@ -264,7 +264,7 @@ end
         end
     end,
     Default = false,
-    HoverText = "Risky Chat Disabler"
+    HoverText = "nobody need it but yes"
 })
 
 local AnticheatDisabler = COB("Blatant", {
