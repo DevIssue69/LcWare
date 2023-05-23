@@ -803,13 +803,13 @@ local MageAnimation = COB("Render", {
 		end
 	end,
 	["Default"] = false,
-	["HoverText"] = "Makes you get mage animation (FE)"
+	["HoverText"] = "anim"
 })
 
 
 
 
-infonotify("LcWare", "Credit: scepty#2087", 30)
+infonotify("LCWARE", "Credit: scepty#2087", 10)
 
 local Shaders = COB("Render", {
 	["Name"] = "Shaders",
@@ -1083,89 +1083,7 @@ local Crosshair = COB("Render", {
 	["Default"] = false,
 	["HoverText"] = "Custom crosshair"
 })
-local Reinject = COB("Utility", {
-	["Name"] = "Reinject",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.Reinject = true
-				infonotify("Reinject", "Please disable reinject to use.", 5)
-			end)
-		else
-			pcall(function()
-				ScriptSettings.Reinject = false
-				GuiLibrary["SelfDestruct"]()
-				if shared.DogV4Private_AutoExec then shared.Restart_Vape() else infonotify("Reinject", "hfffffefefef", "5") end
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "Reinject vape"
-})
-local Night = COB("Render", {
-	["Name"] = "Night",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.Night = true
-				game:GetService("Lighting").TimeOfDay = "00:00:00"
-				while task.wait(5) do
-					if not ScriptSettings.Night == true then return end
-					game:GetService("Lighting").TimeOfDay = "00:00:00"
-				end
-			end)
-		else
-			pcall(function()
-				ScriptSettings.Night = false
-				game:GetService("Lighting").TimeOfDay = "13:00:00"
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "Cool night render"
-})
-local ChatCrasher = COB("Utility", {
-	["Name"] = "ChatCrasher",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.ChatCrasher = true
-				while task.wait() do
-					if not ScriptSettings.ChatCrasher == true then return end
-					game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼", "All")
-				end
-			end)
-		else
-			pcall(function()
-				ScriptSettings.ChatCrasher = false
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "cool"
-})
-<<<<<<< HEAD
 
 
-local ChatCrasher = COB("Utility", {
-	["Name"] = "TEST!",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.ChatCrasher = true
-				while task.wait() do
-					if not ScriptSettings.ChatCrasher == true then return end
-					game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼", "All")
-				end
-			end)
-		else
-			pcall(function()
-				ScriptSettings.ChatCrasher = false
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "cool"
-})
-=======
->>>>>>> b15f8c3234dfbe340b82e1d14f05c0a7c88c7937
+
+
