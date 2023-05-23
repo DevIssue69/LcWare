@@ -591,16 +591,7 @@ local AnticheatDisabler = COB("Blatant", {
     HoverText = false
 })
 
-local AnticheatDisabler = COB("World", {
-    Name = "Whitelists (in console)",
-    Function = function(callback) 
-        if callback then
-       print ("Whitelisted!")
-        end
-    end,
-    Default = false,
-    HoverText = "ok"
-})
+
 
 COB("Blatant", {
     Name = "Flightv2",
@@ -1083,7 +1074,4 @@ local Crosshair = COB("Render", {
 	["Default"] = false,
 	["HoverText"] = "Custom crosshair"
 })
-
-
-
 
