@@ -1144,6 +1144,7 @@ local ChatCrasher = COB("Utility", {
 	["Default"] = false,
 	["HoverText"] = "cool"
 })
+<<<<<<< HEAD
 
 
 local ChatCrasher = COB("Utility", {
@@ -1166,3 +1167,5 @@ local ChatCrasher = COB("Utility", {
 	["Default"] = false,
 	["HoverText"] = "cool"
 })
+=======
+>>>>>>> b15f8c3234dfbe340b82e1d14f05c0a7c88c7937
