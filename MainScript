@@ -1074,3 +1074,4 @@ local Crosshair = COB("Render", {
 	["HoverText"] = "Custom crosshair"
 })
 
+print:("Copyright soon, Please don't skid any source.")
