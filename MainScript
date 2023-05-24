@@ -1,5 +1,5 @@
--- lcware v.1.7
--- copyright;) --
+-- lcware version 1.7
+-- c 
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until shared.GuiLibrary
 local GuiLibrary = shared.GuiLibrary
@@ -1073,5 +1073,3 @@ local Crosshair = COB("Render", {
 	["Default"] = false,
 	["HoverText"] = "Custom crosshair"
 })
-
-print:("Copyright soon, Please don't skid any source.")
