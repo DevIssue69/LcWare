@@ -725,7 +725,7 @@ end
 
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "LCWareV1.7"
 GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV1.7"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LcWareV1.7"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LCWareV1.7"
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
 infonotify("LCWARE", "Modules Loaded", 5)
 
@@ -793,7 +793,7 @@ local MageAnimation = COB("Render", {
 		end
 	end,
 	["Default"] = false,
-	["HoverText"] = "anim"
+	["HoverText"] = "idk"
 })
 
 
