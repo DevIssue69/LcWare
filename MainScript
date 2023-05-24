@@ -1181,3 +1181,4 @@ local AntiAFK = COB("Render", {
 })
 
 
+print("Remember using alt's on roblox because byfron can kill you.")
