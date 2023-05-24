@@ -1,3 +1,4 @@
+-- Some credits for : Infinite Yield line 588 loadstring.
 -- oh finnaly i updated.
 -- scepty developing this cool script;; --
 repeat task.wait() until game:IsLoaded()
@@ -733,11 +734,11 @@ function checklagback()
 	return isnetworkowner(hrp)
 end
 
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "LcWareV1.6"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV1.6"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LcWareV1.6"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "LcWareV1.7Byfron"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV1.7Byfron"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LcWareV1.7Byfron"
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
-infonotify("LCWARE", "Modules Loaded", 5)
+infonotify("LCWARE", "Modules Loaded.", 5)
 
 
 
@@ -807,10 +808,10 @@ local MageAnimation = COB("Render", {
 })
 
 
-
+-- notifaction.
 
 infonotify("LcWare", "Credit: scepty#2087", 30)
-
+-- shaders 
 local Shaders = COB("Render", {
 	["Name"] = "Shaders",
 	["Function"] = function(callback)
@@ -1178,3 +1179,5 @@ local AntiAFK = COB("Render", {
 	["Default"] = false,
 	["HoverText"] = "No more AFK kicks, wow, another untoggable module i made toggable"
 })
+
+
