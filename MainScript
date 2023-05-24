@@ -1,5 +1,5 @@
--- lcware version 1.7
--- c 
+-- oh finnaly i updated.
+-- scepty developing this cool script;; --
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until shared.GuiLibrary
 local GuiLibrary = shared.GuiLibrary
@@ -247,9 +247,10 @@ SunRays.Parent = game[LightingName]
 })
 
 local AnticheatDisabler = COB("Utility", {
-    Name = "ChatCrasher",
+    Name = "Chat-Crasher",
     Function = function(callback) 
-        if callback then      
+        if callback then
+      -- FE chat made by MrBeast#5353
 -- The effect isn't immediate, it they may take a few minutes.
 -- This is a beta version, it only works in games that use the default roblox chat
 while true do
@@ -263,7 +264,7 @@ end
         end
     end,
     Default = false,
-    HoverText = "nobody need it but yes"
+    HoverText = "Risky Chat Disabler"
 })
 
 local AnticheatDisabler = COB("Blatant", {
@@ -590,7 +591,16 @@ local AnticheatDisabler = COB("Blatant", {
     HoverText = false
 })
 
-
+local AnticheatDisabler = COB("World", {
+    Name = "Whitelists (in console)",
+    Function = function(callback) 
+        if callback then
+       print ("Whitelisted!")
+        end
+    end,
+    Default = false,
+    HoverText = "ok"
+})
 
 COB("Blatant", {
     Name = "Flightv2",
@@ -723,9 +733,9 @@ function checklagback()
 	return isnetworkowner(hrp)
 end
 
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "LCWareV1.7"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV1.7"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LCWareV1.7"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "LcWareV1.6"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV1.6"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LcWareV1.6"
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
 infonotify("LCWARE", "Modules Loaded", 5)
 
@@ -793,13 +803,13 @@ local MageAnimation = COB("Render", {
 		end
 	end,
 	["Default"] = false,
-	["HoverText"] = "idk"
+	["HoverText"] = "Makes you get mage animation (FE)"
 })
 
 
 
 
-infonotify("LCWARE", "Credit: scepty#2087", 10)
+infonotify("LcWare", "Credit: scepty#2087", 30)
 
 local Shaders = COB("Render", {
 	["Name"] = "Shaders",
@@ -1072,4 +1082,99 @@ local Crosshair = COB("Render", {
 	end,
 	["Default"] = false,
 	["HoverText"] = "Custom crosshair"
+})
+local Reinject = COB("Utility", {
+	["Name"] = "Reinject",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.Reinject = true
+				infonotify("Reinject", "Please disable reinject to use.", 5)
+			end)
+		else
+			pcall(function()
+				ScriptSettings.Reinject = false
+				GuiLibrary["SelfDestruct"]()
+				if shared.DogV4Private_AutoExec then shared.Restart_Vape() else infonotify("Reinject", "You do not have Dog V4 Reinject supported.", "5") end
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "Reinject vape"
+})
+local Night = COB("Render", {
+	["Name"] = "Night",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.Night = true
+				game:GetService("Lighting").TimeOfDay = "00:00:00"
+				while task.wait(5) do
+					if not ScriptSettings.Night == true then return end
+					game:GetService("Lighting").TimeOfDay = "00:00:00"
+				end
+			end)
+		else
+			pcall(function()
+				ScriptSettings.Night = false
+				game:GetService("Lighting").TimeOfDay = "13:00:00"
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "Cool night render"
+})
+local ChatCrasher = COB("Utility", {
+	["Name"] = "ChatCrasher",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.ChatCrasher = true
+				while task.wait() do
+					if not ScriptSettings.ChatCrasher == true then return end
+					game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼", "All")
+				end
+			end)
+		else
+			pcall(function()
+				ScriptSettings.ChatCrasher = false
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "cool"
+})
+local AntiAFK = COB("Render", {
+	["Name"] = "AntiAFK",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.AntiAFK = true
+				local cons = getconnections or get_signal_cons
+				if cons then
+					for i,v in pairs(cons(game:GetService("Players").LocalPlayer.Idled)) do
+						if ScriptSettings.AntiAFK == true then
+							v:Disable()
+							v:Disconnect()
+						end
+					end
+				end
+				assert(firesignal, "Asserted FireSignal")
+				local uis = game:GetService("UserInputService")
+				local runs = game:GetService("RUnService")
+				uis.WindowFocusReleased:Connect(function()
+					if ScriptSettings.AntiAFK == true then
+						runs.Stepped:Wait()
+						pcall(firesignal, uis.WindowFocused)
+					end
+				end)
+			end)
+		else
+			pcall(function()
+				ScriptSettings.AntiAFK = false
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "No more AFK kicks, wow, another untoggable module i made toggable"
 })
