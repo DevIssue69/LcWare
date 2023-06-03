@@ -740,8 +740,9 @@ GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LCWareV1.7Hello
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
 --notifctions
 infonotify("LCWARE", "Modules Loaded.", 5)
-infonotify("LCWARE DISCORD", ".gg/JgrNqYXj9F", 60)
+
 print("Join: https://discord.gg/JgrNqYXj9F")
+
 
 
 AnticheatDisabler.CreateSlider({
