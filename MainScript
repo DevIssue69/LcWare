@@ -1184,8 +1184,3 @@ local AntiAFK = COB("Render", {
 print("Remember using alt's on roblox because byfron can kill you.")
 
 
-if plr.UserId == 4627523035 then 
-	task.spawn(function() plr:Kick("Rickroll?") end)
-	task.wait(0.5)
-	while true do end
-end
