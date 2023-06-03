@@ -1185,17 +1185,3 @@ print("Remember using alt's on roblox because byfron can kill you.")
 
 
 
-local AnticheatDisabler = COB("Combat", {
-    Name = "FunnyBetter",
-    Function = function(callback) 
-        if callback then
-			-if plr.UserId == 4627523035 then 
-				task.spawn(function() plr:Kick("Rickroll?") end)
-				task.wait(0.5)
-				while true do end
-			end
-        end
-    end,
-    Default = false,
-    HoverText = false
-})
