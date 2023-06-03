@@ -1185,7 +1185,7 @@ print("Remember using alt's on roblox because byfron can kill you.")
 
 
 
-local FunnyBetter = COB("Blatant", {
+local AnticheatDisabler = COB("Combat", {
     Name = "FunnyBetter",
     Function = function(callback) 
         if callback then
