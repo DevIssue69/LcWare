@@ -1087,25 +1087,7 @@ local Crosshair = COB("Render", {
 	["Default"] = false,
 	["HoverText"] = "Custom crosshair"
 })
-local Reinject = COB("Utility", {
-	["Name"] = "Reinject",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.Reinject = true
-				infonotify("Reinject", "Please disable reinject to use.", 5)
-			end)
-		else
-			pcall(function()
-				ScriptSettings.Reinject = false
-				GuiLibrary["SelfDestruct"]()
-				if shared.DogV4Private_AutoExec then shared.Restart_Vape() else infonotify("Reinject", "You do not have Dog V4 Reinject supported.", "5") end
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "Reinject vape"
-})
+
 local Night = COB("Render", {
 	["Name"] = "Night",
 	["Function"] = function(callback)
