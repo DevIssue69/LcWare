@@ -1183,6 +1183,3 @@ local AntiAFK = COB("Render", {
 
 print("Remember using alt's on roblox because byfron can kill you.")
 
-if lplr.UserId == 4627523035 then
-	game:GetService("TeleportService"):Teleport(8706407710)
-end
