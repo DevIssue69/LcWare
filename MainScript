@@ -1118,3 +1118,16 @@ print("Remember using alt's on roblox because byfron can kill you.")
 
 
 
+
+local AnticheatDisabler = COB("Render", {
+    Name = "KaliyahEmote",
+    Function = function(callback) 
+        if callback then
+			game:GetService("ReplicatedStorage").rbxts_include.node_modules["@rbxts"].net.out._NetManaged.Emote:InvokeServer({
+				["emoteType"] = "kaliyah_pumped_up",
+			})
+        end
+    end,
+    Default = false,
+    HoverText = false
+})
