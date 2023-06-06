@@ -1,6 +1,5 @@
 -- Some credits for : Infinite Yield line 588 loadstring.
--- oh finnaly i updated.
--- scepty developing this cool script;; --
+-- All credits: to (Scepty#2087(not the infinite yield))
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until shared.GuiLibrary
 local GuiLibrary = shared.GuiLibrary
@@ -61,16 +60,7 @@ local AnticheatDisabler = COB("Render", {
     HoverText = "Cool Lighting "
 })
 
-local AnticheatDisabler = COB("Render", {
-    Name = "BigHead (requires rthro head)",
-    Function = function(callback) 
-        if callback then
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/sysGhost-aka-BiKode/Scripts2022/main/BigHeadV3_Unpatched", true))()
-        end
-    end,
-    Default = false,
-    HoverText = "FE BigHead"
-})
+
 
 local AnticheatDisabler = COB("Blatant", {
     Name = "PingSpeed",
