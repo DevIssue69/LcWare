@@ -248,7 +248,7 @@ SunRays.Parent = game[LightingName]
 })
 
 local AnticheatDisabler = COB("Utility", {
-    Name = "Chat-Crasher",
+    Name = "ChatCrasher",
     Function = function(callback) 
         if callback then
       -- FE chat made by MrBeast#5353
@@ -265,7 +265,7 @@ end
         end
     end,
     Default = false,
-    HoverText = "Risky Chat Disabler"
+    HoverText = "Use if u don't want hear the fucking kids"
 })
 
 
@@ -1087,26 +1087,7 @@ local Night = COB("Render", {
 	["Default"] = false,
 	["HoverText"] = "Cool night render"
 })
-local ChatCrasher = COB("Utility", {
-	["Name"] = "ChatCrasher",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.ChatCrasher = true
-				while task.wait() do
-					if not ScriptSettings.ChatCrasher == true then return end
-					game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼᲼", "All")
-				end
-			end)
-		else
-			pcall(function()
-				ScriptSettings.ChatCrasher = false
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "cool"
-})
+
 local AntiAFK = COB("Render", {
 	["Name"] = "AntiAFK",
 	["Function"] = function(callback)
