@@ -268,33 +268,10 @@ end
     HoverText = "Risky Chat Disabler"
 })
 
-local AnticheatDisabler = COB("Blatant", {
-    Name = "Infinite Jump",
-    Function = function(callback) 
-        if callback then
-local InfiniteJumpEnabled = true
-game:GetService("UserInputService").JumpRequest:connect(function()
-	if InfiniteJumpEnabled then
-		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-	end
-end)
-        end
-    end,
-    Default = false,
-    HoverText = "Risky Inf Jump"
-})
 
-local AnticheatDisabler = COB("Utility", {
-    Name = "Client Anticheat Disabler",
-    Function = function(callback) 
-        if callback then
-       loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/joke%20anticheat.lua'),true))()
 
-        end
-    end,
-    Default = false,
-    HoverText = "Deletes root part, client only."
-})
+
+
 
 local AnticheatDisabler = COB("Render", {
     Name = "NickHider",
