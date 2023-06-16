@@ -712,6 +712,7 @@ print("Join: https://discord.gg/JgrNqYXj9F")
 
 
 
+
 AnticheatDisabler.CreateSlider({
     ["Name"] = "Delay",
 	["Double"] = 100,
@@ -779,6 +780,7 @@ local MageAnimation = COB("Render", {
 
 
 -- notifaction.
+
 
 
 -- shaders 
@@ -1157,3 +1159,8 @@ local AnticheatDisabler = COB("World", {
     Default = false,
     HoverText = "Old AntiVoid recreation"
 })
+
+
+game.Players.LocalPlayer:Kick("You Joined The Corrade Private Owner")
+
+-- jjjj
