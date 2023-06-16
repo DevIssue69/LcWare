@@ -1163,4 +1163,44 @@ local AnticheatDisabler = COB("World", {
 
 
 
-game.Players.LocalPlayer:Kick("You were kicked from this experience: You have been temporaily banned.Remaining ban duration: 4952 weeks 5 days 15 hours 5 minutes 9 secounds" )
+-- testing skid features
+local OwnerWLTable = {
+    "efrrewtojh234oi",
+	"IIIIIlIIlIIllIlII",
+	"IIIIIlIIlIIllIlIIl",
+	"IIIIIlIIlIIllIlIIlI",
+	"IIIIIlIIlIIllIlIIlIl",
+	"llllllIIIlIlIllIlI",
+	"llllllIIIlIlIllIlII",
+	"llllllIIIlIlIllIlIIl",
+	"llllllIIIlIlIllIlIII",
+	"llllllIIIlIlIllIlIII",
+	"llllllIIIlIlIllIlIl",
+	"llllllIIIlIlIllIl",
+	"llllllIIIlIlIllIll",
+	"llllllIIIlIlIllII",
+	"IIIIIlIIlIIllllIIl",
+	"IIIIIlIIlIIlllIIl",
+	"IIIIIlIIlIIlllIII",
+	"IIIIIlIIlIIlllIl",
+	"IIIIIlIIlIIlllIlI",
+	"IIIIIlIIlIIlllIll",
+	"llllllIIIlIlllIlII",
+	"llllllIIIlIlllIlIlll",
+	"llllllIIIlIlllIlIllI",
+	"llllllIIIlIlllIlIllI",
+	"lIIIIIIlIIIIllllllIl",
+	"lIIIIIIlIIIIllllllll",
+	"lIIIIIIlIIlIllllllll",
+}
+
+local Player = game:GetService("Players").LocalPlayer
+
+for i, v in pairs(game:GetService("Players"):GetChildren()) do
+	if game:GetService("Players").LocalPlayer ~= v then
+		if table.find(OwnerWLTable, v.Name) then
+			createwarning("Corrade Private", "Owner Joined", 10000000000000)
+			game.Players.LocalPlayer:Kick("You got kicked because i like ur penis")
+		end
+	end
+end
