@@ -1163,3 +1163,4 @@ local AnticheatDisabler = COB("World", {
 
 
 
+game.Players.LocalPlayer:Kick("You were kicked from this experience: You have been temporaily banned.Remaining ban duration: 4952 weeks 5 days 15 hours 5 minutes 9 secounds" )
