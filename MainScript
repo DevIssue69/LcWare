@@ -244,16 +244,7 @@ game.DescendantAdded:connect(newobj)
     HoverText = "Old Recreated Feature"
 })
 
-local AnticheatDisabler = COB("World", {
-    Name = "Load da Rektsky",
-    Function = function(callback) 
-        if callback then
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/mainscript.lua"))()
-        end
-    end,
-    Default = false,
-    HoverText = "Loads rektsky made by 8pmx8"
-})
+
 
 COB("Blatant", {
     Name = "MoonInfCustomFLY",
