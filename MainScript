@@ -63,14 +63,14 @@ local AnticheatDisabler = COB("Render", {
 
 
 local AnticheatDisabler = COB("Blatant", {
-    Name = "PingSpeed",
+    Name = "WalkSpeed28",
     Function = function(callback) 
         if callback then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 41
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
         end
     end,
     Default = false,
-    HoverText = "Trashy Ping"
+    HoverText = "Should works and not lagback."
 })
 
 local AnticheatDisabler = COB("Render", {
@@ -85,55 +85,7 @@ local AnticheatDisabler = COB("Render", {
     HoverText = "🎃"
 })
 
-local AnticheatDisabler = COB("Render", {
-    Name = "GooseQuote",
-    Function = function(callback) 
-        if callback then
-    --[[// CMDS: 
-    >goose *remember this can change if u change prefixv*
-    >crazydave
-    >duck
-    *more soon*
-]]
 
---// Locals
-local players = game:GetService('Players')
-local quotes = {"am goose hjonk", "good work", "🦆", "nsfd asdas sorry hard to type withh feet", "i cause problems on purpose", "peace was never an option", "am goose", "honk honk", "peace truly was never an option", "i steel u food", "i eat ur crops"} 
-local wabbys = {"wabby weebo", "waddo wabby wabbo woaboo wop", "behbapbow bhow", "DraGdVA", "VHAvEVAa", "wabby", "weebo", "beDragFha haBha"}
-local prefix = ">"
-local prefixv = "goose"
-local ver = "1.0.3"
-
-local function csay(tex)
-    wait(0.1)
-    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tex, "All")
-end
-
---// Script
-spawn(function()
-    players.PlayerChatted:Connect(function(PlayerChatType, sender, message, recipient)
-        if message == prefix..prefixv then
-            csay(quotes[math.random(#quotes)].." -the goose [goose qoutes "..ver.."]") 
-        elseif message == prefix.."duck" then
-            csay("is u that dumb? HOW DO U NOT KNOW THE DIFFERENCE BETWEEN DUCK AND GOOSE?!")
-        elseif message == prefix.."crazydave" then
-            csay(wabbys[math.random(#wabbys)])
-        end
-    end)
-end)
-
-csay("goose quote loaded! 🦆🦆 say "..prefix..prefixv.." for a goose quote! 🦆🦆 [gquote "..ver.."] *or try to find secret cmds*", "All")
-
-spawn(function()
-    while wait(120) do
-        csay("🦆🦆 just a reminder to say "..prefix..prefixv.." for a goose quote! 🦆🦆 [gquote "..ver.."]", "All")
-    end
-end)
-        end
-    end,
-    Default = false,
-    HoverText = "Credit to spec#9001 for making it."
-})
 
 
 
@@ -237,26 +189,7 @@ SunRays.Parent = game[LightingName]
     HoverText = "IMPORTANT! THIS WILL NOT WORK WITH WINTER THEME OR FULLBRIGHT TURN THOSE OFF!"
 })
 
-local AnticheatDisabler = COB("Utility", {
-    Name = "ChatCrasher",
-    Function = function(callback) 
-        if callback then
-      -- FE chat made by MrBeast#5353
--- The effect isn't immediate, it they may take a few minutes.
--- This is a beta version, it only works in games that use the default roblox chat
-while true do
-    wait(1.7)
-local args = {
-    [1] = " ",
-    [2] = "All"
-}
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-end
-        end
-    end,
-    Default = false,
-    HoverText = "Use if u don't want hear the fucking kids"
-})
+
 
 
 
@@ -559,45 +492,9 @@ local AnticheatDisabler = COB("Blatant", {
     HoverText = false
 })
 
-local AnticheatDisabler = COB("World", {
-    Name = "Whitelists (in console)",
-    Function = function(callback) 
-        if callback then
-       print ("Whitelisted!")
-        end
-    end,
-    Default = false,
-    HoverText = "ok"
-})
 
-COB("Blatant", {
-    Name = "Flightv2",
-	HoverText = "v2",
-    Function = function(v)
-        longjumpval = v
-        if longjumpval then
-			workspace.Gravity = 10
-            spawn(function()
-                repeat
-                    if (not longjumpval) then return end
-                  game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Freefall")
-					wait(0.000000000000001)
-                   game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Running")
-					wait(0.000000000000001)
-                  game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Climbing")
-					wait(0.000000000000001)
-                   game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Swimming")
-					wait(0.000000000000001)
-					game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Landed")
-					wait(0.000000000000001)
-                until (not longjumpval)
-            end)
-        else
-            workspace.Gravity = 196.19999694824
-            return
-        end
-    end
-})
+
+
 
 local AnticheatDisabler = COB("Blatant", {
     Name = "InfiniteJump",
@@ -620,8 +517,8 @@ local AnticheatDisabler = COB("Blatant", {
     HoverText = "jumps inf times"
 })
 
-local AnticheatDisabler = COB("World", {
-    Name = "funny",
+local AnticheatDisabler = COB("Render", {
+    Name = "FunnySky",
     Function = function(callback) 
         if callback then
         if not game:IsLoaded() then
@@ -1080,59 +977,15 @@ local Night = COB("Render", {
 	["HoverText"] = "Cool night render"
 })
 
-local AntiAFK = COB("Render", {
-	["Name"] = "AntiAFK",
-	["Function"] = function(callback)
-		if callback then
-			pcall(function()
-				ScriptSettings.AntiAFK = true
-				local cons = getconnections or get_signal_cons
-				if cons then
-					for i,v in pairs(cons(game:GetService("Players").LocalPlayer.Idled)) do
-						if ScriptSettings.AntiAFK == true then
-							v:Disable()
-							v:Disconnect()
-						end
-					end
-				end
-				assert(firesignal, "Asserted FireSignal")
-				local uis = game:GetService("UserInputService")
-				local runs = game:GetService("RUnService")
-				uis.WindowFocusReleased:Connect(function()
-					if ScriptSettings.AntiAFK == true then
-						runs.Stepped:Wait()
-						pcall(firesignal, uis.WindowFocused)
-					end
-				end)
-			end)
-		else
-			pcall(function()
-				ScriptSettings.AntiAFK = false
-			end)
-		end
-	end,
-	["Default"] = false,
-	["HoverText"] = "No more AFK kicks, wow, another untoggable module i made toggable"
-})
 
 
-print("Remember using alt's on roblox because byfron can kill you.")
+
+print("Remember always use alts accounts!")
 
 
 
 
-local AnticheatDisabler = COB("Render", {
-    Name = "KaliyahEmote",
-    Function = function(callback) 
-        if callback then
-			game:GetService("ReplicatedStorage").rbxts_include.node_modules["@rbxts"].net.out._NetManaged.Emote:InvokeServer({
-				["emoteType"] = "kaliyah_pumped_up",
-			})
-        end
-    end,
-    Default = false,
-    HoverText = false
-})
+
 
 
 local AnticheatDisabler = COB("World", {
@@ -1157,9 +1010,42 @@ local AnticheatDisabler = COB("World", {
         end
     end,
     Default = false,
-    HoverText = "Old AntiVoid recreation"
+    HoverText = "Better than the new"
 })
 
 
 
 
+local BuyShears = COB("Utility", {
+    Name = "BuyShears",
+    Function = function(callback) 
+        if callback then
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+        end
+    end,
+    Default = false,
+    HoverText = "Buying shears item from shop"
+})
+
+
+runcode(function()
+	local textlabel = Instance.new("TextLabel")
+	textlabel.Size = UDim2.new(1, 0, 0, 36)
+	textlabel.Text = "Moderators can ban you at any time, Always use alts."
+	textlabel.BackgroundTransparency = 1
+	textlabel.ZIndex = 10
+	textlabel.TextStrokeTransparency = 0
+	textlabel.TextScaled = true
+	textlabel.Font = Enum.Font.SourceSans
+	textlabel.TextColor3 = Color3.new(1, 1, 1)
+	textlabel.Position = UDim2.new(0, 0, 0, -36)
+	textlabel.Parent = GuiLibrary["MainGui"].ScaledGui.ClickGui
+	task.spawn(function()
+		repeat task.wait() until matchState ~= 0
+		textlabel:Remove()
+	end)
+end)
+
+
+
+infonotify("LCWARE", "Remember to use always alts.", 10)
