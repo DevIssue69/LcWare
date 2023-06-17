@@ -1054,7 +1054,7 @@ infonotify("LCWARE", "Remember to use always alts.", 10)
 
 
 
-local UniversalTag = COB("World", {
+local AnticheatDisabler = COB("World", {
     Name = "UniversalTag",
     Function = function(callback) 
         if callback then
