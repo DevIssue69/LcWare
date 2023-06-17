@@ -1053,7 +1053,9 @@ infonotify("LCWARE", "Remember to use always alts.", 10)
 
 
 
+
 -- AnimDisabler is from lcware private btw
+
 local AnimDisabler = COB("Utility", {
 	["Name"]  = "AnimDisabler",
 	["Function"] = function(callback)
