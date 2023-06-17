@@ -1053,4 +1053,27 @@ infonotify("LCWARE", "Remember to use always alts.", 10)
 
 
 
-
+-- AnimDisabler is from lcware private btw
+local AnimDisabler = COB("Utility", {
+	["Name"]  = "AnimDisabler",
+	["Function"] = function(callback)
+		if callback then
+			pcall(function()
+				ScriptSettings.AnimDisabler = true
+				game:GetService("Players").LocalPlayer.Character.Animate.Disabled = true
+				while task.wait(1.5) do
+					if not ScriptSettings.AnimDisabler == true then return end
+					repeat task.wait() until game:GetService("Players").LocalPlayer.Character.Animate
+					game:GetService("Players").LocalPlayer.Character.Animate.Disabled = true
+				end
+			end)
+		else
+			pcall(function()
+				ScriptSettings.AnimDisabler = false
+				game:GetService("Players").LocalPlayer.Character.Animate.Disabled = false
+			end)
+		end
+	end,
+	["Default"] = false,
+	["HoverText"] = "Disables your animation"
+})
