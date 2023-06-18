@@ -425,7 +425,7 @@ Lighting.ExposureCompensation = 0.5
     HoverText = "AestheticLightingV2"
 })
 
-local AnticheatDisabler = COB("World", {
+local AnticheatDisabler = COB("Render", {
     Name = "UltraFPSBoost",
     Function = function(callback) 
         if callback then
@@ -469,7 +469,7 @@ end
         end
     end,
     Default = false,
-    HoverText = "FPS Booster"
+    HoverText = "Deleted all textures"
 })
 
 local AnticheatDisabler = COB("Blatant", {
