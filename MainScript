@@ -498,8 +498,8 @@ function checklagback()
 end
 
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "VacationLCWareV2.2"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV2.2"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LCWareV2.2"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "VacationLCWareV2.2"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "VacationLCWareV2.2"
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
 --notifctions
 infonotify("LCWARE", "Modules Loaded.", 5)
