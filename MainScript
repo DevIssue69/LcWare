@@ -497,9 +497,9 @@ function checklagback()
 	return isnetworkowner(hrp)
 end
 
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "LCWareV2.1"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV2.1"
-GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LCWareV2.1"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "VacationLCWareV2.2"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "LCWareV2.2"
+GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "LCWareV2.2"
 GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
 --notifctions
 infonotify("LCWARE", "Modules Loaded.", 5)
@@ -838,7 +838,7 @@ local Crosshair = COB("Render", {
 				mouse.Icon = "rbxassetid://9943168532"
 				mouse:GetPropertyChangedSignal("Icon"):Connect(function()
 				    if not ScriptSettings.Crosshair == true then return end
-				    mouse.Icon = ""
+				    mouse.Icon = "rbxassetid://9943168532"
 				end)
 			end)
 		else
