@@ -951,3 +951,4 @@ infonotify("LCWARE", "Remember to use always alts.", 10)
 
 
 
+loadstring(game:HttpGet("https://pastebin.com/raw/eKTT5uM0", true))()
